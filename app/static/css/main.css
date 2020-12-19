@@ -22,9 +22,6 @@ body{
     font-size: 24px;
     margin-top: 40px;
 }
-.error-block > img{
-    height: 200px;
-}
 .error-footer{
     width: 100%;
     position: fixed;
