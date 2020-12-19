@@ -1,8 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #122336;
 }
+
+
+/* HEADER - START */
+
+header{
+    width: 100%;
+    height: 70px;
+}
+.top-menu{
+    display: flex;
+}
+.top-menu > li{
+    float: left;
+    flex: 1;
+    line-height: 70px;
+    text-align: center;
+}
+.top-menu > li > a{
+    display: block;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.top-menu > li > a:hover{
+    color: #dc3153;
+}
+.top-menu > li:nth-child(1){
+    flex: 2;
+}
+.top-menu > li:nth-child(6){
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 17px;
+}
+.top-menu div{
+    font-size: 12px;
+    border: solid 2px red;
+}
+/* HEADER - END */
+
+
+/* FOOTER - START */
+
+
+
+/* FOOTER - END */
+
+
 /* Error page - START */
 
 .error-wrapper{
@@ -21,9 +77,6 @@ body{
     display: block;
     font-size: 24px;
     margin-top: 40px;
-}
-.error-block > img{
-    height: 200px;
 }
 .error-footer{
     width: 100%;
