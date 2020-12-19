@@ -148,3 +148,14 @@ html,
     left:37.5%;
     margin-top:25%;
 }
+
+.flexiocent{
+position: absolute;
+display: flex;
+justify-content: center;    
+}
+.flexiobtw{
+position: absolute;
+display: flex;
+justify-content: space-between;
+}
