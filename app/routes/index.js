@@ -20,7 +20,7 @@ module.exports = (function(client) {
         limit:'5mb'
     }));
 
-// For authentication - start
+    // For authentication - start
     router.use(session({
         secret: config.session,
         resave: false,
@@ -78,10 +78,10 @@ module.exports = (function(client) {
         }
     };
 
-// For authentication - end 
+    // For authentication - end 
 
     router.get('/', (req, res) => {
-        res.render('./pages/index.ejs', {root: '../' + __dirname});
+        res.render('./pages/app.ejs', {root: '../' + __dirname});
     });
     
     router.post('/register',
@@ -95,13 +95,15 @@ module.exports = (function(client) {
         failureRedirect: '/login',
         failureFlash: false })
     );
-    
+
+    // Logout page
     router.get('/logout', function (req, res){
         req.session.destroy(function (err) {
           res.redirect('/');
         });
     });
 
+    // Error page
     router.use(function(req, res, next){
         res.status(404);
         res.render('./error/404.ejs', {root: '../' + __dirname});
