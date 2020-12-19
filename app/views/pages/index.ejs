@@ -9,10 +9,10 @@
     <link rel="shortcut icon" href="./static/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./static/css/normalize.css">
     <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/mdb.css">
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./static//css/mdb.css">
 </head>
 <body>
 
@@ -22,10 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><span class='text-danger'>S</span>PORT<span class='text-danger'>W</span>AY</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -36,63 +33,44 @@
         </li>
         
       </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Вход в<br> кабинет тренера</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Вход в<br> кабинет клиента</a>
-        </li>
-        
-        
-      </ul>
+	  <button type="button" class="navbar-btn">Войти в<br> кабинет тренера</button>
+	  <button type="button" class="navbar-btn">Войти в<br> кабинет клиента</button>
     </div>
       </div>
     </nav>
 
     <!-- Intro Section -->
     <div id="home" class="view jarallax" style="background-image: url(./static/img/first_landing.png); background-size: cover;">
-      <div class="mask rgba-black-strong">
-        <div class="container h-100 d-flex justify-content-center align-items-center mt-5">
-          <div class="row smooth-scroll">
-            <div class="col-md-12 text-center white-text">
-              <div class="wow fadeInDown" data-wow-delay="0.2s">
-                <h3 class="display-4 font-weight-bold mb-2 rgba-black-light py-2"><span class='text-danger'>S</span>PORT<span class='text-danger'>W</span>AY</h3>
-                
-            </div>
-          </div>
+      <div class="mask">
+        <div class="container h-100 d-flex align-items-center mt-5">
+		<div class="header_template">
+		<div class="header_post">
+        <h3 class="header-text"><span class='text-danger'>S</span>port<span class='text-danger'>W</span>ay - <Br>
+		ОНЛАЙН СПОРТЗАЛ
+		</h3>
+		
+        </div>
+		</div>
         </div>
       </div>
     </div>
+    </div>
 
   </header>
+  <main>
+  <div class="container container_main">
+	<div class="header_template">
+		<div class="header_post"> 
+		<div class="header_post_right">
+		<img src="./static/img/first2_landing.png" class='container_img'> <span class='container_text'><span class='container_white'>  <span class='text-danger'>S</span>PORT<span class='text-danger'>W</span>AY</span>  создан специально для людей, которые хотят быть в форме круглый год</span> 
+		
+        </div>
+        </div>
+		</div>
+	
+  </div>
+  </main>
   
- 
-<!--header class="container-fluid fixed-top">
-    <div class="row">
-        <div class="col-sm-3">
-            Logo
-        </div>
-        <div class="col-sm-3">
-            Text 1
-        </div>
-        <div class="col-sm-3">
-            Text 2
-        </div>
-        <div class="col-sm-1">
-            Btn1
-        </div>
-        <div class="col-sm-1">
-            Btn2
-        </div>
-    </div>
-</header>
-
-<div class="first-img-wrapper">
-    <div class="col-sm-12">
-        <img class="first-i_img" src="./static/img/first_landing.png" alt="">
-    </div>
-</div-->
 
 </body>
 </html>
