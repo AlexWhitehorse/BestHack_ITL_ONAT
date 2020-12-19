@@ -4,6 +4,9 @@ header {
     height: 3rem;
 }
 
+body {
+	background-color: #122335;
+}
 
 /* END header */
 
@@ -17,6 +20,105 @@ header {
 .navbar-dark {
 	background-color: rgba(128, 128, 128, 0.534);
 }
+.navbar-btn {
+    font-size: 10px;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: 2px solid #ff3547 !important;
+    border-radius: 30px;
+	padding: 5px 10px 5px 10px;
+	margin-left: 10px;
+}
+html,
+    body,
+    header,
+    .view.jarallax {
+      height: 100%;
+      min-height: 100%;
+    }
 .first-i_img{
     width: 100%;
+}
+
+.header_template div.header_post:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px;
+    border-top: 3px solid #C5395C;
+    border-left: 3px solid #C5395C;
+}
+
+.header_template div.header_post:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-bottom: 3px solid #C5395C;
+    border-left: 3px solid #C5395C;
+} 
+
+.header_template div.header_post_right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border-top: 3px solid #C5395C;
+    border-right: 3px solid #C5395C;
+}
+
+.header_template div.header_post_right:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    border-bottom: 3px solid #C5395C;
+    border-right: 3px solid #C5395C;
+}      
+
+     
+.header_template div.header_post {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+	width: 100%;
+}
+
+.header-text {
+	font-size: 45px;
+    padding: 10px;
+    background-color: #5460708a;
+    color: #ddd;
+	margin-bottom: 40px;
+}
+
+.container_main {
+	height: 400px;
+    padding-top: 50px;
+}
+
+.container_img {
+	width: 400px;
+	float: left;
+}
+
+.container_text {
+	color: #c5395c;
+	font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.container_white {
+	color: #FFF;
 }

@@ -3993,7 +3993,7 @@ textarea.form-control-lg {
     display: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 2px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
