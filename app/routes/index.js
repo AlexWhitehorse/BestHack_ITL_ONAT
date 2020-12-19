@@ -81,7 +81,7 @@ module.exports = (function(client) {
     // For authentication - end 
 
     router.get('/', (req, res) => {
-        res.render('./pages/app.ejs', {root: '../' + __dirname});
+        res.render('./pages/index.ejs', {root: '../' + __dirname});
     });
     
     router.post('/register',
