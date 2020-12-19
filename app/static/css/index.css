@@ -1,0 +1,19 @@
+/* BEGIN header */
+header {
+    background-color: rgba(128, 128, 128, 0.534);
+    height: 3rem;
+}
+
+
+/* END header */
+
+.first-img-wrapper {
+    background-color: rgb(136, 0, 0);
+    /* max-height == высоте картинки */
+    /* height: 100vh; */
+    /* max-height: ; */
+
+}
+.first-i_img{
+    width: 100%;
+}
