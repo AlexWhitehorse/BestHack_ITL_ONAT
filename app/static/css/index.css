@@ -158,4 +158,12 @@ justify-content: center;
 position: absolute;
 display: flex;
 justify-content: space-between;
+.container-btn{
+    color: #ffffff !important;
+    background-color: #f13446;
+    border: 2px solid #ff3547 !important;
+    border-radius: 30px;
+	padding: 5px 30px 5px 30px;
+	font-weight: 600;
+	font-size: 18px;
 }
