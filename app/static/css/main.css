@@ -31,15 +31,24 @@ header{
 .top-menu > li > a{
     display: block;
     color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.top-menu > li > a:hover{
+    color: #dc3153;
 }
 .top-menu > li:nth-child(1){
     flex: 2;
 }
 .top-menu > li:nth-child(6){
+    font-size: 12px;
     line-height: 17px;
-    vertical-align: middle;
+    margin-top: 17px;
 }
-
+.top-menu div{
+    font-size: 12px;
+    border: solid 2px red;
+}
 /* HEADER - END */
 
 
