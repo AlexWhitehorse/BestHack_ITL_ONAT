@@ -111,6 +111,16 @@ html,
 .container_footer {
 	height: 200px;
     padding-top: 50px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+#startButton{
+    margin-top: 10px;
+    transition: .3s;
+}
+#startButton:hover{
+    background-color: #c53945;
 }
 
 .container_img {

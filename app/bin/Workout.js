@@ -61,12 +61,13 @@ class Workout{
             trn.discription as train_discription,
             trn.start_time,
             trn.end_time,
-            trn.online
+            trn.online,
+            trn.link_url
             from taineer as tr
             left join 
                 train as trn
             on trn.traineer_id = tr.traineer_id
-            where tr.traineer_id = 1 -- Id Тренера
+            where tr.traineer_id = ${id} -- Id Тренера
             `;
 
             this.client.query(sql).then(result => {
