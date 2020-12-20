@@ -16,8 +16,8 @@
         <h1>Доступные тренировки</h1>
         <% if(type === "workout-list"){ %>
             <%- include('../parts/workout-list', data) %>
-        <% }else if(true){ %>
-            
+        <% }else if(type === "workout-list-t"){ %>
+            <%- include('../parts/workout-list-t', data) %>
         <% } %>
     </main>
     <%- include('../parts/footer') %>
