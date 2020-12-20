@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
 /* BEGIN header */
 header {
     background-color: rgba(128, 128, 128, 0.534);
@@ -5,6 +6,7 @@ header {
 }
 
 body {
+    font-family: Montserrat;
 	background-color: #122335;
 }
 
@@ -176,21 +178,69 @@ justify-content: center;
     z-index: 11;
 }
 .H-1 {
-    color:white
+    color:white;
+    margin-bottom: 6rem;
     /* margin-right: 10rem; */
 }
-.H-2 {
-    color:white
+.H_T-1{
+    color: red;
+    background-color: black;
+    text-decoration:underline;
+}
+.cor_Fishka1{
+    width: 8rem;
+    position:relative;
+    bottom:1rem;
+}
+.H-2{
+    color:white;
+    margin-bottom: 4rem;
+    margin-right: 0.5rem;
     /* margin-left: 10rem;s */
+}
+.H_T-2{
+    color: red;
+    background-color: black;
+    text-decoration:underline;
+}
+.cor_Fishka2{
+    width: 8rem;
+    position:relative;
+    bottom:2rem;
+    right:2rem;
 }
 .H-3 {
-    color:white
-    /* margin-right: 10rem; */
+    color:white;
+    margin-bottom: 4rem;
 }
+.H_T-3{
+    color: red;
+    background-color: black;
+    text-decoration:underline;
+}
+.cor_Fishka3{
+    width: 8rem;
+    position:relative;
+    bottom:2rem;
+    left: 2rem;
+}
+
 .H-4 {
-    color:white
+    color:white;
+    margin-bottom: 20 rem;
     /* margin-left: 10rem;s */
 }
+.H_T-4{
+    color: red;
+    background-color: black;
+    text-decoration:underline;
+}
+.cor_Fishka4{
+    width: 8rem;
+    position:relative;
+    bottom:2rem;
+}
+
 .clines-middle {
     
     justify-content: space-evenly;
