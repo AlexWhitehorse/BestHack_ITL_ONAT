@@ -154,10 +154,54 @@ position: absolute;
 display: flex;
 justify-content: center;    
 }
+
+.cl-1 {
+    transform: rotate(45deg);
+    width: 40rem;
+    height: 3px;
+    background-color: rgba(255, 254, 254, 0.5);
+    position: absolute;
+}
+.cl-2 {
+    transform: rotate(-45deg);
+    width: 40rem;
+    height: 3px;
+    background-color:rgba(255, 254, 254, 0.5);
+    position: absolute;
+}
+
+.clines {
+    flex-direction: column;
+    width: 20rem;
+    z-index: 11;
+}
+.H-1 {
+    color:white
+    /* margin-right: 10rem; */
+}
+.H-2 {
+    color:white
+    /* margin-left: 10rem;s */
+}
+.H-3 {
+    color:white
+    /* margin-right: 10rem; */
+}
+.H-4 {
+    color:white
+    /* margin-left: 10rem;s */
+}
+.clines-middle {
+    
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .flexiobtw{
 position: absolute;
 display: flex;
 justify-content: space-between;
+}
 .container-btn{
     color: #ffffff !important;
     background-color: #f13446;
@@ -166,4 +210,14 @@ justify-content: space-between;
 	padding: 5px 30px 5px 30px;
 	font-weight: 600;
 	font-size: 18px;
+}
+.home_b{
+    position: relative;
+    background-image: url(../img/first_landing3.png);
+    background-size: cover;
+    height: 100vh;
+}
+.blackground{
+    background-color: rgba(0, 0, 0, 0.24);
+    z-index: 10;
 }
