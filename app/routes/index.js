@@ -11,7 +11,9 @@ module.exports = (function(client) {
     const path = require('path');
     const axios = require('axios').default;
     const router = express.Router();
+    const Workout = require('../bin/Workout');
 
+    const wo = new Workout(client);
     
     router.use('/static', express.static(path.join(__dirname + '/../static'))); // Set default static files path
     router.use(bodyParser.json({limit:'5mb'}));
@@ -82,6 +84,18 @@ module.exports = (function(client) {
 
     router.get('/', (req, res) => {
         res.render('./pages/index.ejs', {root: '../' + __dirname});
+    });
+
+    router.get('/workout/list/', (req, res) => {
+        wo.getClientWorkout(1).then(result => {
+            res.render('./pages/app.ejs', {data: result, type: "workout-list"});
+        });
+    });
+
+    router.get('/search', (req, res) => {
+        wo.getClientWorkout(5).then(result => {
+            res.render('./pages/search.ejs', {data: result});
+        });
     });
     
     router.post('/register',

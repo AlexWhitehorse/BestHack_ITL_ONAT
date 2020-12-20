@@ -178,6 +178,7 @@ main > h1:before, .workout-list > h2:before{
     cursor: pointer;
     transition: .3s;
     position: relative;
+    color: white;
 }
 .workout-link:before{
     border: solid 2px #dc3153;
@@ -204,10 +205,6 @@ main > h1:before, .workout-list > h2:before{
 }
 .workout-list{
     margin-top: 45px;
-}
-.workout-list > p{
-    margin-top: 20px;
-    color: white;
 }
 .workout-table-wrapper{
     width: 75%;
