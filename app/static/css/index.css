@@ -122,7 +122,8 @@ html,
 	color: #c5395c;
 	font-size: 22px;
     padding: 0px;
-    margin: 0px;
+    position: relative;
+    left: 20px;
     
 }
 
@@ -183,6 +184,7 @@ justify-content: center;
     /* margin-right: 10rem; */
 }
 .H_T-1{
+    width: 9rem;
     color: red;
     background-color: black;
     text-decoration:underline;
@@ -199,6 +201,7 @@ justify-content: center;
     /* margin-left: 10rem;s */
 }
 .H_T-2{
+    width: 9rem;
     color: red;
     background-color: black;
     text-decoration:underline;
@@ -207,13 +210,14 @@ justify-content: center;
     width: 8rem;
     position:relative;
     bottom:2rem;
-    right:2rem;
+    right:3rem;
 }
 .H-3 {
     color:white;
     margin-bottom: 4rem;
 }
 .H_T-3{
+    width: 13rem;
     color: red;
     background-color: black;
     text-decoration:underline;
@@ -231,6 +235,7 @@ justify-content: center;
     /* margin-left: 10rem;s */
 }
 .H_T-4{
+    width: 9rem;
     color: red;
     background-color: black;
     text-decoration:underline;
@@ -263,7 +268,7 @@ justify-content: space-between;
 }
 .home_b{
     position: relative;
-    background-image: url(../img/first_landing3.png);
+    background-image: url(../img/first_landing3.jpg);
     background-size: cover;
     height: 100vh;
 }
