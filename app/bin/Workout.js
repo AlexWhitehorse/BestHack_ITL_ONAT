@@ -50,6 +50,34 @@ class Workout{
             });
         });
     }
+
+    getTrainerWorkout(id){
+        return new Promise((resolve, reject) => {
+            if(!id) resolve({status: false, code: 500});
+            const sql = `select 
+            tr.name as traineer_name,
+            tr.avatar_url,
+            trn.name as train_name,
+            trn.discription as train_discription,
+            trn.start_time,
+            trn.end_time,
+            trn.online
+            from taineer as tr
+            left join 
+                train as trn
+            on trn.traineer_id = tr.traineer_id
+            where tr.traineer_id = 1 -- Id Тренера
+            `;
+
+            this.client.query(sql).then(result => {
+                console.log(result);
+                resolve({status: true, code: 200, data: result.rows});
+            }).catch(error => {
+                console.log(error);
+                resolve({status: false, code: 500, error: error});
+            });
+        });
+    }
     
 }
 

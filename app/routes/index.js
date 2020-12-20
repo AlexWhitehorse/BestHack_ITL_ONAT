@@ -92,6 +92,12 @@ module.exports = (function(client) {
         });
     });
 
+    router.get('/workout/list-t', (req, res) => {
+        wo.getTrainerWorkout(1).then(result => {
+            res.render('./pages/app.ejs', {data: result, type: "workout-list-t"});
+        });
+    });
+
     router.get('/search', (req, res) => {
         wo.getClientWorkout(5).then(result => {
             res.render('./pages/search.ejs', {data: result});
