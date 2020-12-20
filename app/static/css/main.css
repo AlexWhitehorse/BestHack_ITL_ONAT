@@ -238,6 +238,61 @@ main > h1:before, .workout-list > h2:before{
 .workout-table-wrapper > table td{
     padding: 10px;
 }
+.search-block{
+    margin-top: 20px;
+}
+.search-block > select{
+    background-color: #1c3757;
+    border: solid 2px #1f3f66;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+.search-block > button{
+    outline: none;
+    border: solid 2px #285894;
+    border-radius: 5px;
+    background-color: #1c3757;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.search-block > button:hover{
+    background-color: #234875;
+}
+.trainers-block{
+    margin-top: 25px;
+}
+.trainer{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+.trainer > div{
+    flex: 1;
+    margin-top: 25px;
+}
+.trainer-name{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.trainer-id > button{
+    outline: none;
+    border: solid 2px #285894;
+    border-radius: 5px;
+    background-color: #1c3757;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.trainer-id > button:hover{
+    background-color: #234875;
+}
+
 /* MAIN - END */
 
 

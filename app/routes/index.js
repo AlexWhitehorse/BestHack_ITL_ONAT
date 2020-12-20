@@ -100,8 +100,18 @@ module.exports = (function(client) {
 
     router.get('/trainer/search', (req, res) => {
         wo.getClientWorkout(5).then(result => {
-            res.render('./pages/search.ejs', {data: result});
+            res.render('./pages/search.ejs', {data: result, type: "search"});
         });
+    });
+
+    router.post('/trainer/searchTrainer', (req, res) => {
+        const category = req.body.category;
+        console.log(category);
+        const result = {
+            name: "Денис Осадчий",
+            id: 1
+        }
+        res.send(JSON.stringify(result));
     });
     
     router.post('/register',
