@@ -4,11 +4,11 @@ const filter = document.getElementById('filter');
 const modal = document.querySelector('.modal-auth');
 
 trButton.onclick = () => {
-    showModalAuth();
+    window.location="/workout/list-t";
 }
 
 clButton.onclick = () => {
-    showModalAuth();
+    window.location="/workout/list"
 }
 
 filter.onclick = () => {
