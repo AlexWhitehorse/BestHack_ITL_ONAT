@@ -98,7 +98,7 @@ module.exports = (function(client) {
         });
     });
 
-    router.get('/search', (req, res) => {
+    router.get('/trainer/search', (req, res) => {
         wo.getClientWorkout(5).then(result => {
             res.render('./pages/search.ejs', {data: result});
         });
