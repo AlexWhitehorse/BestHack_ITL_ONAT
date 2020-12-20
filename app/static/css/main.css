@@ -9,6 +9,7 @@
 
 html{
     height: 100%;
+    overflow: hidden;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -25,6 +26,18 @@ header{
     width: 100%;
     height: 70px;
     flex: 0 0 auto;
+    position: relative;
+}
+header:before{
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px #dc3153;
+    animation: bg-circle 3s infinite alternate-reverse;
 }
 .top-menu{
     display: flex;
@@ -34,6 +47,13 @@ header{
     flex: 1;
     line-height: 70px;
     text-align: center;
+}
+.logo{
+    font-size: 22px;
+}
+.logo b{
+    color: #dc3153;
+    font-size: 26px;
 }
 .top-menu > li > a{
     height: 80px;
@@ -87,15 +107,27 @@ header{
 main{
     flex: 1 0 auto;
     text-align: center;
+    position: relative;
 }
-main > h1{
+main:before{
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: -150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px #dc3153;
+    animation: bg-circle 2s infinite alternate-reverse;
+}
+main > h1, .workout-list > h2{
     font-size: 1.3em;
     color: white;
     font-weight: 400;
     display: inline-block;
     position: relative;
 }
-main > h1:before{
+main > h1:before, .workout-list > h2:before{
     position: absolute;
     content: "";
     bottom: -10px;
@@ -104,6 +136,9 @@ main > h1:before{
     height: 3px;
     background-color: #dc3153;
     animation: title-line 3s linear alternate-reverse infinite;
+}
+.workout-list > h2:before{
+    animation: title-line 2.5s linear alternate-reverse infinite;
 }
 .workout-wrapper > ul{
     width: 80%;
@@ -116,6 +151,25 @@ main > h1:before{
     color: white;
     flex: 1;
 }
+.workout-wrapper > ul > li:nth-child(1){
+    position: relative;
+}
+.workout-wrapper > ul > li:nth-child(1):before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 85px;
+    top: 0;
+    background-image: url('../img/clock.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .5s;
+    cursor: pointer;
+}
+.workout-wrapper > ul > li:nth-child(1):hover:before{
+    transform: rotate(360deg);
+}
 .workout-link{
     background-color: #dc3153;
     padding: 5px 20px;
@@ -124,6 +178,7 @@ main > h1:before{
     cursor: pointer;
     transition: .3s;
     position: relative;
+    color: white;
 }
 .workout-link:before{
     border: solid 2px #dc3153;
@@ -148,7 +203,40 @@ main > h1:before{
     position: relative;
     top: 8px;
 }
-
+.workout-list{
+    margin-top: 45px;
+}
+.workout-table-wrapper{
+    width: 75%;
+    position: relative;
+    top: 20px;
+    padding: 25px 25px 50px 25px;
+    max-width: 1280px;
+    border: solid 3px #dc3153;
+    margin: 0 auto;
+}
+.workout-table-wrapper > table{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    border-collapse: collapse; 
+    border: solid 3px #122336;
+}
+.workout-table-wrapper > table span{
+    font-size: 12px;
+    font-weight: 300;
+}
+.workout-table-wrapper > table th{
+    padding: 15px;
+}
+.workout-table-wrapper > table th,
+.workout-table-wrapper > table td
+{
+    border: solid 2px #dc3153;
+}
+.workout-table-wrapper > table td{
+    padding: 10px;
+}
 /* MAIN - END */
 
 
@@ -156,6 +244,18 @@ main > h1:before{
 
 footer{
     flex: 0 0 auto;
+    position: relative;
+}
+footer:before{
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 2px #dc3153;
+    animation: bg-circle 2.5s infinite alternate-reverse;
 }
 footer > p{
     font-size: 12px;
@@ -254,5 +354,11 @@ footer > p{
     100%{
         left: 90%;
         width: 10%;
+    }
+}
+
+@keyframes bg-circle{
+    100%{
+        transform: scale(1.1);
     }
 }
